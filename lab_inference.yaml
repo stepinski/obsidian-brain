@@ -1,0 +1,19 @@
+name: lab-inference
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - pytorch-cuda=11.8
+  - numpy<2.0.0
+  - poppler
+  - pip:
+      - fastapi
+      - uvicorn
+      - craft-text-detector
+      - transformers
+      - pdf2image
+      - pillow
