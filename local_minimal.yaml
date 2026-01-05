@@ -1,0 +1,16 @@
+name: obsidian-client
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - duckdb
+  - pip:
+      - langchain
+      - langgraph
+      - langchain-openai
+      - sentence-transformers  # For local embedding rebuilds
+      - requests               # To talk to the Lab API
+      - python-multipart       # For file uploads
+      - fastapi                # To serve the search UI
+      - uvicorn
